@@ -1,11 +1,11 @@
 package classes;
 
-public class Fogoes {
+public class Fogao {
     private boolean aberto;
     private  boolean ligado;
     private int temperatura;
 
-    public Fogoes(boolean aberto, boolean ligado, int temperatura) {
+    public Fogao(boolean aberto, boolean ligado, int temperatura) {
         this.aberto = aberto;
         this.ligado = ligado;
         this.temperatura = temperatura;

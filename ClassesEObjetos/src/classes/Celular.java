@@ -1,11 +1,11 @@
 package classes;
 
 public class Celular {
-    private int resolucao;
+    private String resolucao;
     private String modelo;
     private String sistemaOperacional;
 
-    public Celular(int resolucao, String modelo, String sistemaOperacional) {
+    public Celular(String resolucao, String modelo, String sistemaOperacional) {
         this.resolucao = resolucao;
         this.modelo = modelo;
         this.sistemaOperacional = sistemaOperacional;
