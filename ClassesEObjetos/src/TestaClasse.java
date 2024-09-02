@@ -1,7 +1,4 @@
-import classes.Cachorro;
-import classes.Carro;
-import classes.Celular;
-import classes.Fogao;
+import classes.*;
 
 import java.util.Scanner;
 
@@ -21,7 +18,7 @@ public class TestaClasse {
             System.out.println("2. Carro");
             System.out.println("3. Celular");
             System.out.println("4. Fogão");
-            System.out.println("5. Classe5");
+            System.out.println("5. Gato");
             System.out.println("6. Classe6");
             System.out.println("7. Classe7");
             System.out.println("8. Classe8");
@@ -54,6 +51,36 @@ public class TestaClasse {
                     fogao.abrirFecharTampa();
                     fogao.aumentarTemperatura();
                     fogao.abrirFecharTampa();
+                    break;
+                case 5:
+                    Gato gato = new Gato("gatuno", "de botas", 3);
+                    gato.miar();
+                    gato.correr();
+                    gato.dormir();
+                    break;
+                case 6:
+                    Monitor monitor = new Monitor(1920, 1080, "pichau 123");
+                    monitor.ligarDesligar(false);
+                    monitor.exibir("texto de exibicao teste");
+                    monitor.fazerSom();
+                    break;
+                case 7:
+                    Notebook notebook = new Notebook(false, "Asus zephyrus", false);
+                    notebook.abrirFechar();
+                    notebook.ligarDesligar();
+                    notebook.tocarMusica("Evanescence Imaginary");
+                    break;
+                case 8:
+                    Pessoa pessoa = new Pessoa("Lucas", 191, 95);
+                    pessoa.correr();
+                    pessoa.falar("eu curso banco de dados na fatec");
+                    pessoa.dormir();
+                    break;
+                case 9:
+                    Videogame ps5 = new Videogame(false, 1000, 1000);
+                    ps5.fazerDownload(105);
+                    ps5.jogar("Black Myth Wukong");
+                    ps5.desinstalar(105);
                     break;
                 case 0:
                     rodando = false;

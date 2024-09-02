@@ -34,4 +34,9 @@ public class Videogame {
             memoriaAtual = memoriaTotal;
         }
     }
+    public void jogar(String jogo)
+    {
+        System.out.println("agora jogando " + jogo);
+        jogando = true;
+    }
 }
