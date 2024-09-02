@@ -19,11 +19,12 @@ public class TestaClasse {
             System.out.println("3. Celular");
             System.out.println("4. Fogão");
             System.out.println("5. Gato");
-            System.out.println("6. Classe6");
-            System.out.println("7. Classe7");
-            System.out.println("8. Classe8");
-            System.out.println("9. Classe9");
-            System.out.println("10. Classe10");
+            System.out.println("6. Monitor");
+            System.out.println("7. Mouse");
+            System.out.println("8. Notebook");
+            System.out.println("9. Pessoa");
+            System.out.println("10. Videogame");
+            System.out.println("11. CALCULADORA");
             System.out.println("0. Sair");
 
             int escolha = scanner.nextInt();
@@ -65,22 +66,32 @@ public class TestaClasse {
                     monitor.fazerSom();
                     break;
                 case 7:
+                    Mouse mouse = new Mouse("deathadder", 1080, 100);
+                    mouse.alterarDpi(1800);
+                    mouse.clicarBotaoDireito();
+                    mouse.mover();
+                    break;
+                case 8:
                     Notebook notebook = new Notebook(false, "Asus zephyrus", false);
                     notebook.abrirFechar();
                     notebook.ligarDesligar();
                     notebook.tocarMusica("Evanescence Imaginary");
                     break;
-                case 8:
+                case 9:
                     Pessoa pessoa = new Pessoa("Lucas", 191, 95);
                     pessoa.correr();
                     pessoa.falar("eu curso banco de dados na fatec");
                     pessoa.dormir();
                     break;
-                case 9:
+                case 10:
                     Videogame ps5 = new Videogame(false, 1000, 1000);
                     ps5.fazerDownload(105);
                     ps5.jogar("Black Myth Wukong");
                     ps5.desinstalar(105);
+                    break;
+                case 11:
+                    Calculadora calculadora = new Calculadora();
+                    calculadora.exibirMenu();
                     break;
                 case 0:
                     rodando = false;
