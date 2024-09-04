@@ -68,7 +68,7 @@ public class Calculadora {
                     double denominador = scanner.nextDouble();
                     setNumerador(numerador);
                     setDenominador(denominador);
-                    System.out.println("\nValores atribuídos com sucesso.");
+                    System.out.println("\nValores atribuidos com sucesso.");
                     break;
                 case 2:
                     System.out.println("\nResultado da soma: " + soma());
@@ -87,7 +87,7 @@ public class Calculadora {
                     }
                     break;
                 case 6:
-                    System.out.println("Saindo...\n\n\n");
+                    System.out.println("Saindo da calculadora...\n\n\n");
                     return;
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
